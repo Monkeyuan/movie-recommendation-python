@@ -114,7 +114,7 @@ def unique_everseen(iterable, key=None):
                 yield element
                 
 def main():
-    movies = get_movies(open('/home/sri/Documents/hashedin/functional-python/movies/movie.data'), open('/home/sri/Documents/hashedin/functional-python/movies/ratings.data'))
+    movies = get_movies(open('movies/movie.data'), open('movies/ratings.data'))
     
     movies = movies.values()
     print("Most Popular Movie : %s" % most_popular_movie(movies)['name'])
